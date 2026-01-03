@@ -1,12 +1,12 @@
-a = "20"
-b = "40"
-
+# variable = container to store value
+# can have digits, alphabets,underscore and only start with alpha and underscore not space between.
+a = 2
+b = 5
 print(a+b)
 
-# datatypes--
-c = 71    #int 
-d = 23.66 #float
-e = "kannu" #string
-f = true #boolean 
-g = none #none 
-
+# datatypes = int ,float ,string ,boolean ,none
+a = 2
+b = 9.22
+c = "kannu"
+d = True
+e = None
