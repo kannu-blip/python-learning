@@ -21,7 +21,7 @@ def game():
         else:
             hiscore = 0
 
-    print(f"Your score is :{score}")
+    print(f"Your score is : {score}")
     if(score>hiscore):
         with open("hiscore.txt", "w") as f:
             f.write(str(score))
@@ -62,3 +62,32 @@ if ("PYTHON" in content):
 else:
     print("No! python is not in content")
 
+# p6-----
+with open("log.txt") as f:
+    lines = f.readlines()
+
+lineno = 1
+for line in lines:
+    if("PYTHON" in line):
+        print(f"yes python is present in line no: {lineno}")
+        break
+    lineno += 1
+
+else:
+       print("No python is not present")
+    
+# p7----
+with open("myfile.txt") as f:
+    content1 = f.read()
+
+with open("log.txt") as f:
+    content2 = f.read()
+
+if(content1 == content2):
+    print("Yes these files are identical")
+else:
+    print("No these file are not identical")
+
+# p8----
+# with open("log.txt", "w") as f:     
+#     f.write("")                         #this will wipe out all code existing in it
